@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { DishesComponent } from './dishes/dishes.component';
+import { DishDetailComponent } from './dish-detail/dish-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DishesComponent
+    DishesComponent,
+    DishDetailComponent
   ],
   imports: [
     BrowserModule,

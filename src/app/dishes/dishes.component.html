@@ -8,12 +8,7 @@
       <span class="name">{{dish.name}}</span></button>
   </li>
 </ul>
-<div *ngIf="selectedDish">
-  <h2>{{selectedDish.name | uppercase}} Details</h2>
-  <div>id: {{selectedDish.id}}</div>
-  <div>
-    <label for="dish-name">Dish name: </label>
-    <input id="dish-name" [(ngModel)]="selectedDish.name" placeholder="name">
-  </div>
-</div>
+
+<app-dish-detail [dish]="selectedDish"></app-dish-detail>
+
 
